@@ -1,7 +1,12 @@
 .gradle/
 .idea/
+**/.settings/
+**/.project
+*/.classpath
 *.iml
 thermometer/build/
 thermometer/target/
 thermometer-api/build
 thermometer-impl/build
+thermometer-api/bin
+thermometer-impl/bin
