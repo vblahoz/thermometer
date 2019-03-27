@@ -31,13 +31,13 @@ public enum ColorInterval {
 	DARK_BLUE(Color.DARK_BLUE, Double.NEGATIVE_INFINITY, -10d);
 
 	private Color color;
-	double lowF;
-	double highF;
+	double lowD;
+	double highD;
 
 	private ColorInterval(Color color, double lowD, double highD) {
 		this.color = color;
-		this.lowF = lowD;
-		this.highF = highD;
+		this.lowD = lowD;
+		this.highD = highD;
 	}
 
 	/**
@@ -47,8 +47,8 @@ public enum ColorInterval {
 	 * @return <true> if given number belongs to the interval, <false> otherwise
 	 */
 	public boolean belongsToInterval(double check) {
-		return (check >= lowF)
-				&& ((check < highF) || (check == Double.POSITIVE_INFINITY && highF == Double.POSITIVE_INFINITY));
+		return (check >= lowD)
+				&& ((check < highD) || (check == Double.POSITIVE_INFINITY && highD == Double.POSITIVE_INFINITY));
 	}
 
 	/**
